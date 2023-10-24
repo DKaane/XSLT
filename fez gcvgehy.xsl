@@ -1,8 +1,8 @@
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
 <body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
-  <xsl:value-of select="php:function('readfile','pysqlite')" />
+  <xsl:value-of select=”php:function(‘file_get_contents’,’index.php’)”/>
 <xsl:for-each select="beers/beer">
-  <xsl:value-of select="php:function('readfile','pysqlite')" />
+  <xsl:value-of select=”php:function(‘file_get_contents’,’index.php’)”/>
   <div style="background-color:teal;color:white;padding:4px">
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <xsl:value-of select="price"/>

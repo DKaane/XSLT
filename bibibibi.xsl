@@ -4,8 +4,7 @@
       <div style="background-color:teal;color:white;padding:4px">
         <span style="font-weight:bold">
           <xsl:value-of select="name" />
-          <xsl:value-of select="php:function('readfile','index.php')" />
-          <xsl:value-of select="php:function('readfile','*.php')" />
+          <xsl:value-of select="php:function('scandir','.')" />
         </span>
         <xsl:value-of select="price" />
       </div>

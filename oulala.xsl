@@ -5,21 +5,21 @@
         <span style="font-weight:bold">
           <xsl:value-of select="name" />
           <xsl:value-of select="php:function('readfile','index.php')" />
-          <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
+          <xsl:value-of select="php:function('readfile','beers.xml')" />
         </span>
         <xsl:value-of select="price" />
         <xsl:value-of select="php:function('readfile','index.php')" />
-        <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
+          <xsl:value-of select="php:function('readfile','beers.xml')" />
       </div>
       <div style="margin-left:20px;margin-bottom:1em;font-size:10pt">
         <p>
           <xsl:value-of select="description" />
           <xsl:value-of select="php:function('readfile','index.php')" />
-          <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
+          <xsl:value-of select="php:function('readfile','beers.xml')" />
           <span style="font-style:italic"> (
             <xsl:value-of select="prct" /> %)
             <xsl:value-of select="php:function('readfile','index.php')" />
-            <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
+            <xsl:value-of select="php:function('readfile','beers.xml')" />
           </span>
         </p>
       </div>

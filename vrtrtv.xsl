@@ -2,7 +2,6 @@
 <body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
   <xsl:value-of select='php:function("file_get_contents","index.php")'/>
 <xsl:for-each select="beers/beer">
-  <xsl:value-of select='php:function("file_get_contents","index.php")'/>
   <div style="background-color:teal;color:white;padding:4px">
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <xsl:value-of select="price"/>

